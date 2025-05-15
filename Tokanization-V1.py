@@ -87,8 +87,7 @@ all_tokens = sorted(set(preprocessed))
 vocab = {token:integer for integer,token in enumerate(all_tokens)}
 tokenizer = SimpleTokenizerV1(vocab)
 
-text = """"It's the last he painted, you know," 
-           Mrs. Gisburn said with pardonable pride."""
+ 
 # In above text we have painted word which is not in the vocabulary
 # so we need to replace it with the <unk> token or <unknown> token
 all_tokens.extend(["<|endoftext|>", "<|unk|>"])
