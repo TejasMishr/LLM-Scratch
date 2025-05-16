@@ -91,7 +91,7 @@ tokenizer = SimpleTokenizerV1(vocab)
 # In above text we have painted word which is not in the vocabulary
 # so we need to replace it with the <unk> token or <unknown> token
 all_tokens.extend(["<|endoftext|>", "<|unk|>"])
-ids = tokenizer.encode(text)
+ids = tokenizer.encode(all_tokens)
 print(ids)
 
 # Decoding the token IDs back into text
